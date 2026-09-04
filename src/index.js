@@ -5,6 +5,8 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+const transitRoutes = require('./routes/transit');
+app.use('/api/routes', transitRoutes);
 
 const pool = require('./db');
 
@@ -55,3 +57,4 @@ app.get('/stops/:id/routes', async (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
     console.log('Backend server running on port 3000');
 });
+
