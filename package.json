@@ -1,0 +1,25 @@
+{
+    "name": "mobility-backend",
+    "version": "1.0.0",
+    "description": "Mobility Platform Backend",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js",
+        "test": "jest"
+    },
+    "dependencies": {
+        "adm-zip": "^0.6.0",
+        "cors": "^2.8.6",
+        "csv-parser": "^3.2.1",
+        "dotenv": "^16.6.1",
+        "express": "^4.22.2",
+        "jest": "^30.5.0",
+        "multer": "^1.4.5-lts.1",
+        "pg": "^8.23.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1",
+        "supertest": "^7.2.2"
+    }
+}
